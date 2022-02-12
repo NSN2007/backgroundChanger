@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>backgroundChanger</title>
+    </head>
+    <body>
+        <div class="container" id="kurwa">
+            <p style="color: white; font-family: sans-serif;">CHANGE COLOR HERE</p>
+            <input type="color" id="colorPicker" value="#121218">
+        </div>
+    </body>
+    <script>
+        colorPicker.addEventListener("input", watchColorPicker, false);
+
+        function watchColorPicker(event) {
+            kurwa.style.backgroundColor = event.target.value;
+        }
+    </script>
+</html>
